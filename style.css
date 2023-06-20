@@ -37,24 +37,25 @@ body {
   margin-left: auto;
   width: 35px;
 }
-.mobile--menu {
+#mobile--menu {
   display:none ;
   position: absolute;
   right: 0;
   top: 0;
   width: 250px;
+  height: 200px;
   list-style-type: none;
   gap: 20px;
-}
-.mobile--menu li{
   background: rgb(179, 214, 255);
+}
+#mobile--menu li{
   color: #fff;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   padding: 10px;
   text-transform: capitalize;
   cursor: pointer;
 }
-.mobile--menu li :hover{
+#mobile--menu li :hover{
   background: rgb(86, 106, 129);
   transition: 1s;
 
