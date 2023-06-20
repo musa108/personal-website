@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(39, 38, 38);
+}
+/* nav bar for desktop version */
+.nav--bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  background: rgb(179, 214, 255);
+}
+.nav--logo {
+  color: #f34;
+  font-family: sans-serif;
+}
+.nav--logo span {
+  color: #5f5f5f;
+}
+.nav--menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+.nav--menu :hover {
+  color: #5f5f5f;
+  transition: 300ms;
+}
+/* navbar for mobile version */
+.nav--bar svg {
+  display: none;
+}
+/* hero section */
+#hero--section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 35px;
+}
+#hero--section img {
+  width: 350px;
+  border-radius: 50%;
+  animation: slide-left 1s;
+}
+#hero--section h3 {
+  text-align: center;
+  color: #fff;
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  font-family: monospace;
+  text-transform: capitalize;
+  animation: slide 1s;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* about section */
+.About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.About h1,.Gallery--header{
+    text-align: center;
+    color: #f34;
+    margin-top: 20px;
+}
+.About h3{
+    width: 800px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+/* gallery section */
+
+.gallery--section{
+  display: flex;
+  gap: 20px;
+  padding: 60px 20px;
+  margin: auto;
+  max-width: 650px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.gallery--section img{
+  min-width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  scroll-snap-align: start;
+}
+#Skill {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Skill h3,
+#contact h3 {
+  font-size: 2rem;
+  color: #f34;
+}
+#Skill ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  color: #fff;
+  margin-top: 1rem;
+}
+#Skill ul li {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+#contact div {
+  display: flex;
+  flex-direction: column;
+}
+#contact div label {
+  color: #fff;
+  font-size: 1.125rem;
+  margin-top: 10px;
+}
+#contact div input,
+#contact div textarea {
+  width: 450px;
+  height: 30px;
+}
+#contact button {
+  width: 300px;
+  height: 35px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  background: #f34;
+  color: #fff;
+  font-size: 1.125rem;
+}
+#contact button:hover {
+  background: #fff;
+  color: #f34;
+}
