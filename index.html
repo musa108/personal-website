@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>portfolio websit</title>
   </head>
   <body>
@@ -22,6 +26,7 @@
           stroke-width="1.5"
           stroke="currentColor"
           class="w-6 h-6 svg"
+          id="button"
         >
           <path
             stroke-linecap="round"
@@ -29,6 +34,11 @@
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
           />
         </svg>
+        <ul class="mobile--menu">
+          <li>About</li>
+          <li>Skill</li>
+          <li>Contact</li>
+        </ul>
       </nav>
       <section id="hero--section">
         <h3>
@@ -42,19 +52,19 @@
         <h1>ABOUT</h1>
         <h3>
           i'm musa umar,a frontend developer from nigeria and also computer
-          science student currently undergoing program.
-          i build beautiful responsive website and bring it to live,My
-          hobbies are football,video games and coding
+          science student currently undergoing program. i build beautiful
+          responsive website and bring it to live,My hobbies are football,video
+          games and coding
         </h3>
       </section>
       <h1 class="Gallery--header">Gallery</h1>
       <section class="gallery--section">
-        <img src="./asset/AYZN3601.JPG" alt="">
-        <img src="./asset/IMG_2474.JPG" alt="">
-        <img src="./asset/IMG_2480.JPG" alt="">
-        <img src="./asset/IMG_5812.JPG" alt="">
-        <img src="./asset/IMG_6519.JPG" alt="">
-        <img src="./asset/IMG_6549.JPG" alt="">
+        <img src="./asset/AYZN3601.JPG" alt="" />
+        <img src="./asset/IMG_2474.JPG" alt="" />
+        <img src="./asset/IMG_2480.JPG" alt="" />
+        <img src="./asset/IMG_5812.JPG" alt="" />
+        <img src="./asset/IMG_6519.JPG" alt="" />
+        <img src="./asset/IMG_6549.JPG" alt="" />
       </section>
       <section id="Skill">
         <h3>Skill</h3>
@@ -83,7 +93,16 @@
 
         <button>Send</button>
       </section>
-      <footer></footer>
+      <footer class="footer">
+        <a href="https://twitter.com/nmanagi22" class="fa fa-twitter"></a>
+        <a
+          href="https://linkedin.com/mwhite/in/musa-umaru-470a8a230"
+          class="fa fa-linkedin"
+        ></a>
+        <a href="https://instagram.com/zaheer-dc" class="fa fa-instagram"></a>
+        <a href="https://github.com/musa108" class="fa fa-github"></a>
+      </footer>
     </main>
+    <script src="./app.js"></script>
   </body>
 </html>

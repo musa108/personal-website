@@ -34,6 +34,30 @@ body {
 /* navbar for mobile version */
 .nav--bar svg {
   display: none;
+  margin-left: auto;
+  width: 35px;
+}
+.mobile--menu {
+  display:none ;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 250px;
+  list-style-type: none;
+  gap: 20px;
+}
+.mobile--menu li{
+  background: rgb(179, 214, 255);
+  color: #fff;
+  font-size: 1.125rem;
+  padding: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.mobile--menu li :hover{
+  background: rgb(86, 106, 129);
+  transition: 1s;
+
 }
 /* hero section */
 #hero--section {
@@ -74,28 +98,29 @@ body {
   }
 }
 /* about section */
-.About{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
-.About h1,.Gallery--header{
-    text-align: center;
-    color: #f34;
-    margin-top: 20px;
+.About h1,
+.Gallery--header {
+  text-align: center;
+  color: #f34;
+  margin-top: 20px;
 }
-.About h3{
-    width: 800px;
-    color: #fff;
-    text-align: center;
-    text-transform: capitalize;
-    line-height: 30px;
+.About h3 {
+  width: 800px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 30px;
 }
 /* gallery section */
 
-.gallery--section{
+.gallery--section {
   display: flex;
   gap: 20px;
   padding: 60px 20px;
@@ -104,7 +129,7 @@ body {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
-.gallery--section img{
+.gallery--section img {
   min-width: 300px;
   height: 300px;
   border-radius: 10px;
@@ -166,4 +191,53 @@ body {
 #contact button:hover {
   background: #fff;
   color: #f34;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+@media (max-width: 767px) {
+  .nav--bar svg {
+    display: block;
+  }
+  .nav--menu {
+    display: none;
+  }
+  #hero--section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #hero--section img {
+    width: 250px;
+  }
+  #hero--section h3 {
+    font-size: 1.5rem;
+  }
+  .About h3{
+    font-size: 1rem;
+    width: 350px;
+  }
+  .gallery--section{
+    max-width: 385px;
+  }
+  #contact div input,
+#contact div textarea {
+  width: 250px;
+}
 }
